@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="PanelApp">
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="/css/icomoon.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/checkbox.css" rel="stylesheet" />
+  </head>
+
+  <body class="app-body">
+    <app-navigation></app-navigation>
+    <div ng-view></div>
+    <app-footer>
+
+    <!--JS Files-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-strap/0.7.1/angular-strap.min.js"></script>
+    <script src="https://raw.github.com/angular-ui/angular-ui/master/build/angular-ui.min.js"></script>
+    <script src="/js/app/app.js"></script>
+    <script src="/js/app/controllers/appController.js"></script>
+    <script src="/js/app/directives/app-navigation.js"></script>
+    <script src="/js/app/directives/app-footer.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="workspace-header">
+    <div class=" row-fluid">
+      <h2 class="span8">{{name}}</h2>
+    </div>
+    <span class="btn boolean" ng-click="doSomethingParticular()" ng-model="firePanel.IsArmed">
+            <span class="on btn-primary" ng-show="firePanel.IsArmed">ON</span>
+            <span class="off btn-default" ng-hide="firePanel.IsArmed">OFF</span>
+        </span>
+    <div ng-model="firePanel.IsArmed">{{firePanel.Status}}</div>
+  </div>
+</div>
