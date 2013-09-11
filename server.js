@@ -39,12 +39,11 @@ var httpServer = http.createServer(app).listen(app.get('port'), function(){
 
 var ioListener = io.listen(httpServer);
 ioListener.sockets.on('connection', function(socket){
-  socket.emit('news', { hello: 'world'});
   socket.on('tellDotNetToDoSomething', function(data){
     //publish to rabbit...
     console.log(data);
-    conn.publish('Panel.Q.Object.workerListener', data, {
-      type: "System_Object:mscorlib"
+    conn.publish('Panel.Q.PanelCommand.panelCommand', data, {
+      type: "TDJ_Panel_Library_PanelCommand:TDJ_Panel_Library"
     });
     console.log('published to rabbit.')
   });

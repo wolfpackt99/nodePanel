@@ -7,6 +7,8 @@
             <span class="on btn-primary" ng-show="firePanel.IsArmed">ON</span>
             <span class="off btn-default" ng-hide="firePanel.IsArmed">OFF</span>
         </span>
-    <div ng-model="firePanel.IsArmed">{{firePanel.Status}}</div>
+    <div ng-model="firePanel.IsArmed">{{firePanel.PanelMessage.Text}}</div>
+    <input type="button" ng-click="getPanelStatus()" value="Get Status"/>
+    {{firePanel.PanelMessage}}
   </div>
 </div>

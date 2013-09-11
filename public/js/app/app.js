@@ -19,6 +19,10 @@ angular.module('PanelApp', [
 			templateUrl: "/app/about/index",
 			controller: "aboutController"
    }).
+	when("/app/details", {
+		templateUrl: "/app/details/index",
+		controller: "detailController"
+	}).
 
 		otherwise({redirectTo: "/app/home"});
 
